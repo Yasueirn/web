@@ -1,0 +1,418 @@
+body {
+    font-family: 'Quando', serif;
+    margin: 0;
+}
+
+header{
+    background-color: #514D9C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 100px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 60px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #00F2FF;
+}
+
+.main_slovo{
+    text-align: center;
+    color: #14185D;
+    font-size: 14pt;
+    margin: 10px;
+}
+
+.hp_pets{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.dogs_con{
+    position: relative;
+}
+
+.donatebox{
+    position: absolute;
+    right: 20%; 
+    top: 30%;    
+    background-color: rgba(81, 77, 156, 0.6);
+    padding: 20px 50px 20px 50px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.donatebox p{
+    color: white;
+    font-size: 63px;
+    -webkit-text-stroke: 2px black;
+    padding: 0;
+    margin: 0;
+}
+
+.donatebox a{
+    background-color: #BF2633;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.donatebox a:hover {
+    background-color: #a21f2d;
+    transform: scale(1.1);
+}
+
+.mission{
+    color: #1F2E5D;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 110px;
+    margin-left: 50px;
+    
+}
+
+.m_container{
+    display: flex; 
+    align-content: center;
+}
+
+.mission_2{
+    font-family: Roboto;
+    font-size: 29px;
+    color: #777777;
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+
+.dog_good{
+    width: 45%;
+}
+
+
+.volo_section {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFCC00;
+    font-family: Remora Sans W3;
+    font-size: 34px;    
+    
+}
+
+#vl1{
+    color: #252C5E;
+    margin: 0;   
+}
+
+#vl2{
+    color: white;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.volo_form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap;
+}
+
+input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
+
+#join_button{
+    background-color: #00C8FF;
+    color: #252C5E;
+    font-family: Remora Sans W3;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;   
+    margin-left: 50px;
+}
+
+#join_button:hover{
+    background-color: #009EC3;
+}
+
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    animation: slide 15s infinite linear;
+}
+
+.carousel-track img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+footer {
+    background-color: #514D9C;
+    color: white;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.footer_con {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00C8FF;
+}
+
+.footer_bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: #3a376e;
+    padding: 10px 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #514D9C;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #6e69b7;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .main_slovo {
+        font-size: 12pt;
+        padding: 0 10px;
+    }
+
+    .donatebox {
+        top: 10%;
+        right: 5%;
+        padding: 10px 20px;
+    }
+
+    .donatebox p {
+        font-size: 36px;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .donatebox a {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .m_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission {
+        font-size: 30px;
+        margin: 50px 20px 0 20px;
+    }
+
+    .mission_2 {
+        font-size: 20px;
+        margin: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .dog_good {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .volo_form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #join_button {
+        margin-left: 0;
+    }
+
+    .carousel-track {
+        animation: none;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel-track img {
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .footer_con {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/*random pet api*/
+
+.random_pet_section {
+    text-align: center;
+    background-color: #f0f0ff;
+    padding: 40px 20px;
+}
+
+.random_pet_section h2 {
+    color: #252C5E;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#randomPetBtn {
+    background-color: #514D9C;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#randomPetBtn:hover {
+    background-color: #3f3a85;
+}
+
+#randomPetContainer img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
